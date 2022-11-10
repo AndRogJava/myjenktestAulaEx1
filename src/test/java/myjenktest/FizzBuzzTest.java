@@ -13,14 +13,28 @@ public class FizzBuzzTest {
 		fb=new FizzBuzz();
 	}
 	
-	@DisplayName("Play FizzBuzz with number=1")
+	@DisplayName("Play FizzBuzz with number = 1")
 	@Test
-	public void testNumber() {
-		
-		
-		
-		String risultato=fb.play(1);
-		//assertEquals(risultatoOttenuto,risultatoPianificato) - restituisce True o False
-		Assertions.assertEquals(risultato, 200);
-	}	
+	public void testNumber1() {
+		String risultato = fb.play(1);
+		// Verifica che il risultato sia uguale
+		Assertions.assertEquals(risultato, "200");
+	}
+	/*
+	@DisplayName("Play FizzBuzz with number = 5")
+	@Test
+	public void testNumber5() {
+		String risultato = fb.play(5);
+		// Verifica che il risultato sia uguale
+		Assertions.assertEquals(risultato, "Buzz");
+	}
+	*/
+	@DisplayName("Play FizzBuzz with number = 3")
+	@Test
+	public void testNumber3() {
+		String risultato = fb.play(3);
+		// Verifica che il risultato sia uguale
+		Assertions.assertEquals(risultato, "Fizz");
+	}
+	
 }
