@@ -35,6 +35,8 @@ public class FizzBuzzTest {
 	@Test
 	public void testNumber3() {
 		
+		
+		
 		String risultato = fb.play(3);
 		// Verifica che il risultato sia uguale
 		Assertions.assertEquals(risultato, "Fizz");
