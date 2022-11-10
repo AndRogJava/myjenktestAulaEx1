@@ -19,6 +19,5 @@ public class FizzBuzzTest {
 		String risultato=fb.play(1);
 		//assertEquals(risultatoOttenuto,risultatoPianificato) - restituisce True o False
 		Assertions.assertEquals(risultato, "1");
-	}
-	
+	}	
 }
